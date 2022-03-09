@@ -1,0 +1,10 @@
+guide
+
+Up -> decrease rainfall intensity
+Down -> increase rainfall intensity
+Right -> push droplets right
+Left -> push droplets left
+
+N -> decrease droplet size
+M -> increase droplet size
+Space -> fresh palette
