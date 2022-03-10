@@ -113,7 +113,7 @@ def main():
                     if event.type == pg.QUIT:
                         running = False
                     if event.type == pg.KEYDOWN:
-                        if event.key == pg.K_q:
+                        if event.key == pg.K_ESCAPE:
                             pg.quit()
                             sys.exit()
                         elif event.key == pg.K_SPACE:
@@ -123,9 +123,9 @@ def main():
                             set_switch_down = True
                         elif event.key == pg.K_UP:
                             set_switch_up = True
-                        elif event.key == pg.K_n:
+                        elif event.key == pg.K_a:
                             set_lin_width_down = True
-                        elif event.key == pg.K_m:
+                        elif event.key == pg.K_d:
                             set_lin_width_up = True
                         elif event.key == pg.K_LEFT:
                             set_tilt_amount_left = True
