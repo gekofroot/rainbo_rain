@@ -5,8 +5,10 @@ Down -> increase rainfall intensity
 Left -> push droplets left
 Right -> push droplets right
 
+W -> fill palette
+S -> regular palette
 A -> decrease droplet size
 D -> increase droplet size
-Space -> fresh palette
 
+Space -> fresh palette
 Escape -> exit

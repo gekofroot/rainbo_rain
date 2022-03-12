@@ -45,6 +45,10 @@ def main():
     bg_b = 0
     bg_c = 0
     bg_col = (bg_a, bg_b, bg_c)
+    fill_palette = 0
+
+    amb_snd = pg.mixer.Sound("rain.wav")
+    amb_snd.play()
 
     col_lis = []
     def addlis(col):
@@ -123,6 +127,10 @@ def main():
                             set_switch_down = True
                         elif event.key == pg.K_UP:
                             set_switch_up = True
+                        elif event.key == pg.K_w:
+                            fill_palette = 1
+                        elif event.key == pg.K_s:
+                            fill_palette = 0
                         elif event.key == pg.K_a:
                             set_lin_width_down = True
                         elif event.key == pg.K_d:
@@ -177,7 +185,10 @@ def main():
 
                 pg.time.wait(switch)
                 pg.display.update()
-                #screen.fill(bg_col)
+                if fill_palette == 1:
+                    pass
+                elif fill_palette == 0:
+                    screen.fill(bg_col)
 
         pg.display.update()
 
