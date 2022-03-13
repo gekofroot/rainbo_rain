@@ -41,14 +41,16 @@ def main():
     height_a = randint(heightmod_a, heightmod_b)
     height_b = randint(heightmod_c, heightmod_d)
     height_delim = height
-    bg_a = 0
-    bg_b = 0
-    bg_c = 0
+    bg_a = 1
+    bg_b = 2
+    bg_c = 6
     bg_col = (bg_a, bg_b, bg_c)
     fill_palette = 0
-
-    amb_snd = pg.mixer.Sound("rain.wav")
-    amb_snd.play()
+    
+    # set audio
+    pg.mixer.init()
+    pg.mixer.music.load("rain.mp3")
+    pg.mixer.music.play(-1)
 
     col_lis = []
     def addlis(col):
