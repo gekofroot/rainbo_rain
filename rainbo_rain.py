@@ -159,11 +159,11 @@ def main():
                     if lin_width <= 1:
                         lin_width = 1
                 if set_switch_up:
-                    switch += 2
+                    switch += 10
                     if switch >= 90:
                         switch = 90
                 if set_switch_down:
-                    switch -= 2
+                    switch -= 10
                     if switch <= 0:
                         switch = 0
                 if set_tilt_amount_left:
